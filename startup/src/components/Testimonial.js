@@ -86,7 +86,7 @@ import {
 
   function Testimonial() {
   return (
-    <Box bg={useColorModeValue('gray.100', 'gray.700')} border={'1px solid red'} margin={'auto'} width={'90%'}>
+    <Box  border={'1px solid red'} margin={'auto'} width={'90%'} >
     <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
       <Stack spacing={0} align={'center'}>
         <Heading>Our Clients Speak</Heading>
