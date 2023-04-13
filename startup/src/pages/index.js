@@ -396,7 +396,7 @@ function index() {
       <Heading noOfLines={1} textAlign="center" mt={"10px"} color={"green"}>
         Our Recent Projects
       </Heading>
-      <Stack width="90%" border="1px solid red" margin={"auto"} mt={"10px"}>
+      <Stack width="95%" border="1px solid red" margin={"auto"} mt={"10px"}>
         <Carousel responsive={responsive}>
           <div className={styles.coorosel}>
             <img
