@@ -10,14 +10,19 @@ import {
   Button,
   Text,
   VStack,
+  Center,
+  useColorModeValue,
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import styles from "../styles/Home.module.css";
 import Plans from "../components/Plans";
 import Testimonial from "../components/Testimonial";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 function index() {
+  const IMAGE =
+    "https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80";
   const { isOpen, onOpen, onClose } = useDisclosure();
   const responsive = {
     superLargeDesktop: {
@@ -145,17 +150,245 @@ function index() {
 
       <SimpleGrid
         height={"auto"}
-        width={"90%"}
+        width={"95%"}
         margin={"auto"}
         border="1px solid red"
         columns={[1, 1, 2, 4]}
         spacing="40px"
         mt={"50px"}
       >
-        <Box bg="tomato" height="400px"></Box>
-        <Box bg="tomato" height="400px"></Box>
-        <Box bg="tomato" height="400px"></Box>
-        <Box bg="tomato" height="400px"></Box>
+        <Center py={12}>
+          <Box
+            role={"group"}
+            p={6}
+            maxW={"330px"}
+            w={"full"}
+            bg={useColorModeValue("white", "gray.800")}
+            boxShadow={"2xl"}
+            rounded={"lg"}
+            pos={"relative"}
+            zIndex={1}
+          >
+            <Box
+              rounded={"lg"}
+              mt={-12}
+              pos={"relative"}
+              height={"230px"}
+              _after={{
+                transition: "all .3s ease",
+                content: '""',
+                w: "full",
+                h: "full",
+                pos: "absolute",
+                top: 5,
+                left: 0,
+                backgroundImage:
+                  "https://th.bing.com/th/id/OIP.hj8U1UUvIz4n_w9Rc0IPvwHaDG?w=290&h=146&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+                filter: "blur(15px)",
+                zIndex: -1,
+              }}
+              _groupHover={{
+                _after: {
+                  filter: "blur(20px)",
+                },
+              }}
+            >
+              <Image
+                rounded={"lg"}
+                height={230}
+                width={282}
+                objectFit={"cover"}
+                src={
+                  "https://th.bing.com/th/id/OIP.hj8U1UUvIz4n_w9Rc0IPvwHaDG?w=290&h=146&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                }
+              />
+            </Box>
+            <Stack pt={10} align={"center"}>
+              <Heading fontSize={"2xl"} fontFamily={"body"} fontWeight={500}>
+                Web Development
+              </Heading>
+              <Stack direction={"row"} align={"center"}>
+                <Text fontWeight={400} fontSize={"md"}>
+                  Design unique and impactful website
+                </Text>
+              </Stack>
+            </Stack>
+          </Box>
+        </Center>
+        <Center py={12}>
+          <Box
+            role={"group"}
+            p={6}
+            maxW={"330px"}
+            w={"full"}
+            bg={useColorModeValue("white", "gray.800")}
+            boxShadow={"2xl"}
+            rounded={"lg"}
+            pos={"relative"}
+            zIndex={1}
+          >
+            <Box
+              rounded={"lg"}
+              mt={-12}
+              pos={"relative"}
+              height={"230px"}
+              _after={{
+                transition: "all .3s ease",
+                content: '""',
+                w: "full",
+                h: "full",
+                pos: "absolute",
+                top: 5,
+                left: 0,
+                backgroundImage:
+                  "https://th.bing.com/th/id/OIP.Jpk_uCdz-xeockMn8KC-cgHaEa?w=285&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+                filter: "blur(15px)",
+                zIndex: -1,
+              }}
+              _groupHover={{
+                _after: {
+                  filter: "blur(20px)",
+                },
+              }}
+            >
+              <Image
+                rounded={"lg"}
+                height={230}
+                width={282}
+                objectFit={"cover"}
+                src={
+                  "https://th.bing.com/th/id/OIP.Jpk_uCdz-xeockMn8KC-cgHaEa?w=285&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                }
+              />
+            </Box>
+            <Stack pt={10} align={"center"}>
+              <Heading fontSize={"2xl"} fontFamily={"body"} fontWeight={500}>
+                Mobile App Development
+              </Heading>
+              <Stack direction={"row"} align={"center"}>
+                <Text fontWeight={400} fontSize={"md"}>
+                  Build Interactive Mobile application
+                </Text>
+              </Stack>
+            </Stack>
+          </Box>
+        </Center>
+
+        <Center py={12}>
+          <Box
+            role={"group"}
+            p={6}
+            maxW={"330px"}
+            w={"full"}
+            bg={useColorModeValue("white", "gray.800")}
+            boxShadow={"2xl"}
+            rounded={"lg"}
+            pos={"relative"}
+            zIndex={1}
+          >
+            <Box
+              rounded={"lg"}
+              mt={-12}
+              pos={"relative"}
+              height={"230px"}
+              _after={{
+                transition: "all .3s ease",
+                content: '""',
+                w: "full",
+                h: "full",
+                pos: "absolute",
+                top: 5,
+                left: 0,
+                backgroundImage: `https://th.bing.com/th/id/OIP.8SlnagLsSE3YRHJUM8mgyAHaEN?w=331&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7`,
+                filter: "blur(15px)",
+                zIndex: -1,
+              }}
+              _groupHover={{
+                _after: {
+                  filter: "blur(20px)",
+                },
+              }}
+            >
+              <Image
+                rounded={"lg"}
+                height={230}
+                width={282}
+                objectFit={"cover"}
+                src={
+                  "https://th.bing.com/th/id/OIP.8SlnagLsSE3YRHJUM8mgyAHaEN?w=331&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                }
+              />
+            </Box>
+            <Stack pt={10} align={"center"}>
+              <Heading fontSize={"2xl"} fontFamily={"body"} fontWeight={500}>
+                Digital Marketing
+              </Heading>
+              <Stack direction={"row"} align={"center"}>
+                <Text fontWeight={400} fontSize={"md"}>
+                  Drive Measurable Business Results
+                </Text>
+              </Stack>
+            </Stack>
+          </Box>
+        </Center>
+        <Center py={12}>
+          <Box
+            role={"group"}
+            p={6}
+            maxW={"330px"}
+            w={"full"}
+            bg={useColorModeValue("white", "gray.800")}
+            boxShadow={"2xl"}
+            rounded={"lg"}
+            pos={"relative"}
+            zIndex={1}
+          >
+            <Box
+              rounded={"lg"}
+              mt={-12}
+              pos={"relative"}
+              height={"230px"}
+              _after={{
+                transition: "all .3s ease",
+                content: '""',
+                w: "full",
+                h: "full",
+                pos: "absolute",
+                top: 5,
+                left: 0,
+                backgroundImage:
+                  "https://th.bing.com/th/id/OIP.hpSrhRsvGZl3SrCok4Ce5wHaD5?w=290&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+                filter: "blur(15px)",
+                zIndex: -1,
+              }}
+              _groupHover={{
+                _after: {
+                  filter: "blur(20px)",
+                },
+              }}
+            >
+              <Image
+                rounded={"lg"}
+                height={230}
+                width={282}
+                objectFit={"cover"}
+                src={
+                  "https://th.bing.com/th/id/OIP.hpSrhRsvGZl3SrCok4Ce5wHaD5?w=290&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                }
+              />
+            </Box>
+            <Stack pt={10} align={"center"}>
+              <Heading fontSize={"2xl"} fontFamily={"body"} fontWeight={500}>
+                On Demand Services
+              </Heading>
+              <Stack direction={"row"} align={"center"}>
+                <Text fontWeight={400} fontSize={"md"}>
+                  Develop On Demand Services
+                </Text>
+              </Stack>
+            </Stack>
+          </Box>
+        </Center>
       </SimpleGrid>
 
       <Plans />
@@ -165,34 +398,45 @@ function index() {
       </Heading>
       <Stack width="90%" border="1px solid red" margin={"auto"} mt={"10px"}>
         <Carousel responsive={responsive}>
-          <div>
+          <div className={styles.coorosel}>
             <img
-              src="https://th.bing.com/th?id=OIP.Py4FzLh1_84aBubYrJBSFAHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+              src="https://nandlalshah955.github.io/stuff/images/Chargbee.png"
               alt=""
             />
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit delectus saepe, porro animi in ut facere soluta minus. Exercitationem officiis praesentium corporis voluptatem ipsam minima temporibus perferendis, consequuntur eius nihil!</p>
+          <h1>Chargbee Website</h1>
+            <p>
+            Chargebee is the subscription billing and revenue management platform that lets you solve for your today, and scale for your tomorrow.
+            </p>
           </div>
-          <div>
+          <div className={styles.coorosel}>
             <img
-              src="https://th.bing.com/th?id=OIP.Fyxpjn4kmefJRD31lBfFXwHaFP&w=297&h=210&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+              src="https://nandlalshah955.github.io/stuff/images/Skinstore.png"
               alt=""
             />
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit delectus saepe, porro animi in ut facere soluta minus. Exercitationem officiis praesentium corporis voluptatem ipsam minima temporibus perferendis, consequuntur eius nihil!</p>
+          <h1>Blossom Website</h1>
+            <p>
+            SkinStore is the online hub where beauty and science click, delivering the latest in innovative clinical skincare and luxury products for over 20 years.
+            </p>
           </div>
-          <div>
+          <div className={styles.coorosel}>
             <img
-              src="https://th.bing.com/th?id=OIP.njnkKsXuwvc5cYpRSH26ywHaFd&w=291&h=214&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+              src="https://nandlalshah955.github.io/stuff/images/Best-BUy-screenshot.png"
               alt=""
             />
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit delectus saepe, porro animi in ut facere soluta minus. Exercitationem officiis praesentium corporis voluptatem ipsam minima temporibus perferendis, consequuntur eius nihil!</p>
+          <h1>BestBuy Website</h1>
+            <p>
+            Best Buy is an E-commerce website in this website we can purchase various products like Beauty Products , Dresses , Women Clothes and Accessories.
+            </p>
           </div>
-          <div>
+          <div className={styles.coorosel}>
             <img
-              src="https://th.bing.com/th?id=OIP.u4EBes6Muu2fy7iM8igMugHaFX&w=293&h=212&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+              src="https://nandlalshah955.github.io/stuff/images/BlueMercury%20screenshot.png"
               alt=""
             />
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit delectus saepe, porro animi in ut facere soluta minus. Exercitationem officiis praesentium corporis voluptatem ipsam minima temporibus perferendis, consequuntur eius nihil!</p>
+          <h1>BlueMercury Website</h1>
+            <p>
+            A leader in luxury beauty and skincare, Purpose of BlueMercury is to create an inviting online beauty shopping experience.
+            </p>
           </div>
         </Carousel>
         ;
