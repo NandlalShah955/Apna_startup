@@ -86,11 +86,11 @@ import {
 
   function Testimonial() {
   return (
-    <Box  border={'1px solid red'} margin={'auto'} width={'90%'} >
+    <Box  margin={'auto'} width={'90%'} bg={useColorModeValue("red.100", "red.900")} >
     <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
       <Stack spacing={0} align={'center'}>
-        <Heading>Our Clients Speak</Heading>
-        <Text>We have been working with clients around the world</Text>
+        <Heading color={"#0e2b5c"} fontFamily={"Montserrat"}>Happy Clients equals to happy us</Heading>
+        <Text color={'#0e2b5c'} fontFamily={'Montserrat'} fontSize={'md'} mt={'20px'}>We always thrive for the best and our clients feedback is what motivates us to achieve that extra mile.</Text>
       </Stack>
       <Stack
         direction={{ base: 'column', md: 'row' }}
@@ -99,48 +99,47 @@ import {
           <TestimonialContent>
             <TestimonialHeading>Efficient Collaborating</TestimonialHeading>
             <TestimonialText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-              neque sed imperdiet nibh lectus feugiat nunc sem.
+            It has been a pleasure working with Fleapo for both my websites. It was very well executed and they are very particular about their design quotient and also delivered my project on time.
+          
+           
             </TestimonialText>
           </TestimonialContent>
           <TestimonialAvatar
             src={
-              'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+              'https://photos.google.com/u/1/photo/AF1QipNoB_31C0zdjnDmftlprcfWbjSEHJtzKKqeLnlJ'
             }
-            name={'Jane Cooper'}
-            title={'CEO at ABC Corporation'}
+            name={'Aman Poddar'}
+            title={'Founder of Must Help Foundation'}
           />
         </Main>
         <Main>
           <TestimonialContent>
             <TestimonialHeading>Intuitive Design</TestimonialHeading>
             <TestimonialText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-              neque sed imperdiet nibh lectus feugiat nunc sem.
+            Thanks to Fleapo's vibrant team, we got a platform to showcase our services completely through online marketing.
             </TestimonialText>
           </TestimonialContent>
           <TestimonialAvatar
             src={
-              'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+              'https://media.licdn.com/dms/image/D4D03AQESqdWealcRnA/profile-displayphoto-shrink_400_400/0/1674200586091?e=1686787200&v=beta&t=hTEh_PzGC2G2n1zPMSxcAIoqro1His6IE1nLIjtF86c'
             }
-            name={'Jane Cooper'}
-            title={'CEO at ABC Corporation'}
+            name={'Dibyanshu Srivastava'}
+            title={'Software Developer at Bottom Funnel'}
           />
         </Main>
         <Main>
           <TestimonialContent>
             <TestimonialHeading>Mindblowing Service</TestimonialHeading>
             <TestimonialText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-              neque sed imperdiet nibh lectus feugiat nunc sem.
+            I had a wonderful experience working with Mr. Nandlal, his interaction was more on a personal level than a strict professional one. Even after the app was delivered to us, they were happy to incorporate a few last minute changes.
             </TestimonialText>
           </TestimonialContent>
           <TestimonialAvatar
             src={
               'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
             }
-            name={'Jane Cooper'}
-            title={'CEO at ABC Corporation'}
+            name={'Surendar'}
+            title={'Founder of MAK Documents'}
           />
         </Main>
       </Stack>

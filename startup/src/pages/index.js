@@ -7,19 +7,26 @@ import {
   Heading,
   SimpleGrid,
   Stack,
-  Button,
   Text,
   VStack,
   Center,
   useColorModeValue,
-  useBreakpointValue,
+  useBreakpointValue,FormControl,
+  FormLabel,
+  Input,
+  Textarea,
+  Button,
+  useToast,Select
+
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import Footer from "../components/Footer"
 import styles from "../styles/Home.module.css";
 import Plans from "../components/Plans";
 import Testimonial from "../components/Testimonial";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+
 function index() {
   const IMAGE =
     "https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80";
@@ -43,6 +50,32 @@ function index() {
       items: 1,
     },
   };
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const toast = useToast();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // TODO: Add form submission logic here
+    // Display success message using `toast`
+    toast({
+      title: "Message sent",
+      description: "We'll get back to you as soon as possible.",
+      status: "success",
+      duration: 5000,
+      isClosable: true,
+    });
+    // Reset form fields
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
+  const inputBg = useColorModeValue("white", "gray.800");
+  const inputBorderColor = useColorModeValue("gray.200", "gray.600");
 
   return (
     <>
@@ -144,7 +177,7 @@ function index() {
         </VStack>
       </Flex>
 
-      <Heading noOfLines={1} textAlign="center" mt={"20px"} color={"green"}>
+      <Heading noOfLines={1} textAlign="center" mt={"30px"} mb={"-30px"} color={"#0e2b5c"} fontFamily={"Montserrat"} >
         Services Offered by us
       </Heading>
 
@@ -204,11 +237,11 @@ function index() {
               />
             </Box>
             <Stack pt={10} align={"center"}>
-              <Heading fontSize={"2xl"} fontFamily={"body"} fontWeight={500}>
+              <Heading fontSize={"2xl"} fontFamily={"Montserrat"} fontWeight={500} color={'#0e2b5c'}>
                 Web Development
               </Heading>
               <Stack direction={"row"} align={"center"}>
-                <Text fontWeight={400} fontSize={"md"}>
+                <Text fontWeight={400} fontSize={"17px"} fontFamily={'Anuphan'} >
                   Design unique and impactful website
                 </Text>
               </Stack>
@@ -262,11 +295,11 @@ function index() {
               />
             </Box>
             <Stack pt={10} align={"center"}>
-              <Heading fontSize={"2xl"} fontFamily={"body"} fontWeight={500}>
-                Mobile App Development
+              <Heading fontSize={"2xl"} fontFamily={"Montserrat"} fontWeight={500} color={'#0e2b5c'} noOfLines={'1'}>
+                 App Development
               </Heading>
               <Stack direction={"row"} align={"center"}>
-                <Text fontWeight={400} fontSize={"md"}>
+                <Text fontWeight={500} fontSize={"17px"} fontFamily={'Anuphan'} >
                   Build Interactive Mobile application
                 </Text>
               </Stack>
@@ -320,11 +353,11 @@ function index() {
               />
             </Box>
             <Stack pt={10} align={"center"}>
-              <Heading fontSize={"2xl"} fontFamily={"body"} fontWeight={500}>
+              <Heading fontSize={"2xl"} fontFamily={"Montserrat"} fontWeight={500} color={'#0e2b5c'}>
                 Digital Marketing
               </Heading>
               <Stack direction={"row"} align={"center"}>
-                <Text fontWeight={400} fontSize={"md"}>
+                <Text fontWeight={400} fontSize={"17px"} fontFamily={'Anuphan'} >
                   Drive Measurable Business Results
                 </Text>
               </Stack>
@@ -378,11 +411,11 @@ function index() {
               />
             </Box>
             <Stack pt={10} align={"center"}>
-              <Heading fontSize={"2xl"} fontFamily={"body"} fontWeight={500}>
+              <Heading fontSize={"2xl"} fontWeight={500} color={'#0e2b5c'} fontFamily={'Montserrat'}>
                 On Demand Services
               </Heading>
               <Stack direction={"row"} align={"center"}>
-                <Text fontWeight={400} fontSize={"md"}>
+                <Text fontWeight={400} fontSize={"17px"} fontFamily={'Anuphan'} >
                   Develop On Demand Services
                 </Text>
               </Stack>
@@ -393,10 +426,10 @@ function index() {
 
       <Plans />
 
-      <Heading noOfLines={1} textAlign="center" mt={"10px"} color={"green"}>
-        Our Recent Projects
+      <Heading noOfLines={1} textAlign="center" color={"#0e2b5c"} fontFamily={"Montserrat"} >
+      Brilliance is what our projects deliver
       </Heading>
-      <Stack width="95%" border="1px solid red" margin={"auto"} mt={"10px"}>
+      <Stack width="95%"  margin={"auto"} mt={"30px"}>
         <Carousel responsive={responsive}>
           <div className={styles.coorosel}>
             <img
@@ -443,6 +476,16 @@ function index() {
       </Stack>
 
       <Testimonial />
+
+      
+
+
+
+
+
+
+
+      <Footer />
     </>
   );
 }

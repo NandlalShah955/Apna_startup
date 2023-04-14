@@ -1,18 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght300&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@200&family=Montserrat&family=Poppins:wght@500&display=swap');
+
+
 .coorosel{
-  text-align: center;
-  margin-left: 30px;
-  margin-right: 30px;
+  
+ 
   height: 400px;
-  border: 1px solid red;
+  
 }
 .coorosel>img{
   height: 55%;
 }
 .coorosel>p{
+  font-family: 'montserrat',sans-serif;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-right: 10px;
+ 
   font-size:17px;
   line-height: 20px;
+  color: #525f7f;
+  margin-top: 5px;
 }
 .coorosel>h1{
-  font-style: italic;
+  /* font-style: italic; */
+  margin-left: 10px;
+  font-family: 'montserrat',sans-serif;
   font-size: 30px;
+  color: #0e2b5c;
 }
