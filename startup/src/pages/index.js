@@ -17,13 +17,13 @@ import {
   FormControl,
   FormLabel,
   Input,
-  Link,
-  Checkbox,
+  InputGroup,
+  InputLeftElement,
+  Textarea,
   
-  
-
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+
+import { HamburgerIcon, CloseIcon,PhoneIcon } from "@chakra-ui/icons";
 import Footer from "../components/Footer"
 import styles from "../styles/Home.module.css";
 import Plans from "../components/Plans";
@@ -465,19 +465,33 @@ function index() {
           <Heading fontSize={'2xl'}>Get in Touch</Heading>
           <FormControl id="email">
             <FormLabel>Name</FormLabel>
-            <Input type="text" />
+            <Input type="text" placeholder="your name"/>
+            
           </FormControl>
           <FormControl id="password">
             <FormLabel>Email Address</FormLabel>
-            <Input type="email" />
+            <Input type="email" placeholder="youremail@gmail.com" />
           </FormControl>
           <FormControl id="phone">
             <FormLabel>Phone</FormLabel>
-            <Input type="tel" />
+            <InputGroup>
+    <InputLeftElement
+      pointerEvents='none'
+      children={<PhoneIcon color='gray.300' />}
+    />
+    <Input type='tel' placeholder='Phone number' />
+  </InputGroup>
           </FormControl>
           <FormControl id="password">
             <FormLabel>Message <span>(optional)</span>  </FormLabel>
-            <Input type="" />
+            <Textarea
+                          borderColor="gray.300"
+                          _hover={{
+                            borderRadius: 'gray.300',
+                          }}
+                          placeholder="Message"
+                        />
+          
           </FormControl>
           <Stack spacing={6}>
             <Stack
