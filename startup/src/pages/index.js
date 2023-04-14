@@ -1,22 +1,26 @@
 import React, { useState } from "react";
 import {
-  Box,
-  Flex,
   useDisclosure,
   Image,
-  Heading,
   SimpleGrid,
   Stack,
-  Text,
   VStack,
   Center,
   useColorModeValue,
-  useBreakpointValue,FormControl,
+  useBreakpointValue,
+  Button,
+  useToast,
+  Flex,
+  Box,
+  Heading,
+  Text,
+  FormControl,
   FormLabel,
   Input,
-  Textarea,
-  Button,
-  useToast,Select
+  Link,
+  Checkbox,
+  
+  
 
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
@@ -28,8 +32,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 function index() {
-  const IMAGE =
-    "https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80";
+ 
   const { isOpen, onOpen, onClose } = useDisclosure();
   const responsive = {
     superLargeDesktop: {
@@ -51,31 +54,6 @@ function index() {
     },
   };
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const toast = useToast();
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // TODO: Add form submission logic here
-    // Display success message using `toast`
-    toast({
-      title: "Message sent",
-      description: "We'll get back to you as soon as possible.",
-      status: "success",
-      duration: 5000,
-      isClosable: true,
-    });
-    // Reset form fields
-    setName("");
-    setEmail("");
-    setMessage("");
-  };
-
-  const inputBg = useColorModeValue("white", "gray.800");
-  const inputBorderColor = useColorModeValue("gray.200", "gray.600");
 
   return (
     <>
@@ -477,9 +455,53 @@ function index() {
 
       <Testimonial />
 
-      
+      <Heading noOfLines={1} textAlign="center" color={"#0e2b5c"} fontFamily={"Montserrat"} mt={'30px'}>
+      Let us collaborate and accelarate
+      </Heading>
 
-
+      <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }} mt={'20px'}>
+      <Flex p={8} flex={1} align={'center'} justify={'center'} mt={'-20px'}>
+        <Stack spacing={4} w={'full'} maxW={'md'}>
+          <Heading fontSize={'2xl'}>Get in Touch</Heading>
+          <FormControl id="email">
+            <FormLabel>Name</FormLabel>
+            <Input type="text" />
+          </FormControl>
+          <FormControl id="password">
+            <FormLabel>Email Address</FormLabel>
+            <Input type="email" />
+          </FormControl>
+          <FormControl id="phone">
+            <FormLabel>Phone</FormLabel>
+            <Input type="tel" />
+          </FormControl>
+          <FormControl id="password">
+            <FormLabel>Message <span>(optional)</span>  </FormLabel>
+            <Input type="" />
+          </FormControl>
+          <Stack spacing={6}>
+            <Stack
+              direction={{ base: 'column', sm: 'row' }}
+              align={'start'}
+              justify={'space-between'}>
+           
+            </Stack>
+            <Button colorScheme={'blue'} variant={'solid'}>
+           Submit
+            </Button>
+          </Stack>
+        </Stack>
+      </Flex>
+      <Flex flex={1}>
+        <Image
+          alt={'Login Image'}
+         boxSize={'70%'}
+          src={
+            'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80'
+          }
+        />
+      </Flex>
+    </Stack>
 
 
 
