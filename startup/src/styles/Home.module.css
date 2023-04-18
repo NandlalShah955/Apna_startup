@@ -29,3 +29,80 @@
   font-size: 30px;
   color: #0e2b5c;
 }
+
+
+
+.head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	padding: 0 2rem;
+	background-color: #29335c;
+	color: #eee;
+}
+
+.nav a {
+  margin: 0 1rem;
+	color: #eee;
+	text-decoration: none;
+}
+
+.nav a:hover {
+	color: #db2b39;
+}
+
+.navbtn {
+  padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color:#eee;
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+
+.head div,
+ .nav {
+	display: flex;
+	align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+	.head .navbtn {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.nav {
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color:#29335c;
+		transition: 1s;
+	}
+
+	.head .responsivenav {
+		transform: translateY(100vh);
+	}
+
+.nav .navclosebtn{
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+.nav a {
+		font-size: 1.5rem;
+	}
+}
