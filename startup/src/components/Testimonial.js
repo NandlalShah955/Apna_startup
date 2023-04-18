@@ -106,7 +106,7 @@ import {
           </TestimonialContent>
           <TestimonialAvatar
             src={
-              'https://photos.google.com/u/1/photo/AF1QipNoB_31C0zdjnDmftlprcfWbjSEHJtzKKqeLnlJ'
+              'https://user-images.githubusercontent.com/101573792/232725339-e58f1117-6ae1-40fd-a774-eee467d16118.jpg'
             }
             name={'Aman Poddar'}
             title={'Founder of Must Help Foundation'}
@@ -136,7 +136,7 @@ import {
           </TestimonialContent>
           <TestimonialAvatar
             src={
-              'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+              'https://user-images.githubusercontent.com/101573792/232724639-491b2199-588f-460b-b85b-095d0e267d2a.png'
             }
             name={'Surendar'}
             title={'Founder of MAK Documents'}

@@ -18,6 +18,7 @@ import {
   function PriceWrapper({ children }) {
     return (
       <Box
+    
         mb={4}
         shadow="base"
         borderWidth="1px"
@@ -38,7 +39,7 @@ function Plans() {
   return (
     <Box py={12}>
     <VStack spacing={2} textAlign="center">
-      <Heading as="h1" fontSize="4xl">
+      <Heading as="h1" fontSize="4xl"   id='pricing'>
         Plans that fit your need
       </Heading>
       <Text fontSize="lg" color={'gray.500'}>

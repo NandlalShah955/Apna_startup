@@ -23,7 +23,7 @@ import {
 } from "@chakra-ui/react";
 import Navbar from '../components/Navbar'
 
-import { HamburgerIcon, CloseIcon, PhoneIcon } from "@chakra-ui/icons";
+import {  PhoneIcon } from "@chakra-ui/icons";
 import Footer from "../components/Footer";
 import styles from "../styles/Home.module.css";
 import Plans from "../components/Plans";
@@ -32,7 +32,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 function index() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+ 
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -57,12 +57,13 @@ function index() {
     <>
      
 <Navbar/>
-
+{/*  */}
       <Flex
+      id="about"
         w={"full"}
         h={"100vh"}
         backgroundImage={
-          "url(https://images.unsplash.com/photo-1600267175161-cfaa711b4a81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)"
+          "url(https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80)"
         }
         backgroundSize={"cover"}
         backgroundPosition={"center center"}
@@ -106,6 +107,7 @@ function index() {
       </Flex>
 
       <Heading
+      id="services"
         noOfLines={1}
         textAlign="center"
         mt={"30px"}
@@ -120,7 +122,7 @@ function index() {
         height={"auto"}
         width={"95%"}
         margin={"auto"}
-        border="1px solid red"
+      
         columns={[1, 1, 2, 4]}
         spacing="40px"
         mt={"50px"}
@@ -357,7 +359,7 @@ function index() {
                 width={282}
                 objectFit={"cover"}
                 src={
-                  "https://th.bing.com/th/id/OIP.hpSrhRsvGZl3SrCok4Ce5wHaD5?w=290&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                  "https://chakra-templates.dev/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1515378791036-0648a3ef77b2%3Fixid%3DMXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%253D%26ixlib%3Drb-1.2.1%26auto%3Dformat%26fit%3Dcrop%26w%3D1350%26q%3D80&w=1200&q=75"
                 }
               />
             </Box>
@@ -387,6 +389,7 @@ function index() {
         textAlign="center"
         color={"#0e2b5c"}
         fontFamily={"Montserrat"}
+        id="projects"
       >
         Brilliance is what our projects deliver
       </Heading>
@@ -508,9 +511,9 @@ function index() {
         <Flex flex={1}>
           <Image
             alt={"Login Image"}
-            boxSize={"70%"}
+            boxSize={"90%"}
             src={
-              "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80"
+              "https://chakra-templates.dev/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1515378791036-0648a3ef77b2%3Fixid%3DMXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%253D%26ixlib%3Drb-1.2.1%26auto%3Dformat%26fit%3Dcrop%26w%3D1350%26q%3D80&w=1200&q=75"
             }
           />
         </Flex>
