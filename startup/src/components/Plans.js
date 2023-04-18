@@ -40,12 +40,8 @@ function Plans() {
     <Box py={12}>
     <VStack spacing={2} textAlign="center">
       <Heading as="h1" fontSize="4xl"   id='pricing'>
-        Plans that fit your need
+        Our Plans that fit your need
       </Heading>
-      <Text fontSize="lg" color={'gray.500'}>
-        Start with 14-day free trial. No credit card needed. Cancel at
-        anytime.
-      </Text>
     </VStack>
     <Stack
       direction={{ base: 'column', md: 'row' }}
@@ -56,18 +52,16 @@ function Plans() {
       <PriceWrapper>
         <Box py={4} px={12}>
           <Text fontWeight="500" fontSize="2xl">
-            Hobby
+            Mobile App Development
           </Text>
           <HStack justifyContent="center">
             <Text fontSize="3xl" fontWeight="600">
-              $
+              Rs
             </Text>
             <Text fontSize="5xl" fontWeight="900">
-              79
+              5000 only
             </Text>
-            <Text fontSize="3xl" color="gray.500">
-              /month
-            </Text>
+           
           </HStack>
         </Box>
         <VStack
@@ -77,20 +71,24 @@ function Plans() {
           <List spacing={3} textAlign="start" px={12}>
             <ListItem>
               <ListIcon as={FaCheckCircle} color="green.500" />
-              unlimited build minutes
+              Amazing Landing page
             </ListItem>
             <ListItem>
               <ListIcon as={FaCheckCircle} color="green.500" />
-              Lorem, ipsum dolor.
+              2+ additional Pages
             </ListItem>
             <ListItem>
               <ListIcon as={FaCheckCircle} color="green.500" />
-              5TB Lorem, ipsum dolor.
-            </ListItem>
+             Login/Signup       
+                  </ListItem>
+                  <ListItem>
+              <ListIcon as={FaCheckCircle} color="green.500" />
+              Best User Interface      
+                  </ListItem>
           </List>
           <Box w="80%" pt={7}>
             <Button w="full" colorScheme="red" variant="outline">
-              Start trial
+              Select
             </Button>
           </Box>
         </VStack>
@@ -117,18 +115,16 @@ function Plans() {
           </Box>
           <Box py={4} px={12}>
             <Text fontWeight="500" fontSize="2xl">
-              Growth
+             Web Development
             </Text>
             <HStack justifyContent="center">
               <Text fontSize="3xl" fontWeight="600">
-                $
+                Rs.
               </Text>
               <Text fontSize="5xl" fontWeight="900">
-                149
+                4000 only
               </Text>
-              <Text fontSize="3xl" color="gray.500">
-                /month
-              </Text>
+              
             </HStack>
           </Box>
           <VStack
@@ -138,28 +134,28 @@ function Plans() {
             <List spacing={3} textAlign="start" px={12}>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
-                unlimited build minutes
+               Simple Landing Page
               </ListItem>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
-                Lorem, ipsum dolor.
+               Static Content
               </ListItem>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
-                5TB Lorem, ipsum dolor.
+               Login/Signup Page
+                             </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+               Web Hoisting
               </ListItem>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
-                5TB Lorem, ipsum dolor.
-              </ListItem>
-              <ListItem>
-                <ListIcon as={FaCheckCircle} color="green.500" />
-                5TB Lorem, ipsum dolor.
+               Domain According to your choice
               </ListItem>
             </List>
             <Box w="80%" pt={7}>
               <Button w="full" colorScheme="red">
-                Start trial
+                Select
               </Button>
             </Box>
           </VStack>
@@ -168,18 +164,16 @@ function Plans() {
       <PriceWrapper>
         <Box py={4} px={12}>
           <Text fontWeight="500" fontSize="2xl">
-            Scale
+           Digital Marketing
           </Text>
           <HStack justifyContent="center">
             <Text fontSize="3xl" fontWeight="600">
-              $
+              Rs
             </Text>
             <Text fontSize="5xl" fontWeight="900">
-              349
+              3000 only
             </Text>
-            <Text fontSize="3xl" color="gray.500">
-              /month
-            </Text>
+            
           </HStack>
         </Box>
         <VStack
@@ -189,20 +183,24 @@ function Plans() {
           <List spacing={3} textAlign="start" px={12}>
             <ListItem>
               <ListIcon as={FaCheckCircle} color="green.500" />
-              unlimited build minutes
+            Google Adsene
             </ListItem>
             <ListItem>
               <ListIcon as={FaCheckCircle} color="green.500" />
-              Lorem, ipsum dolor.
+              Search Engine Optimization
             </ListItem>
             <ListItem>
               <ListIcon as={FaCheckCircle} color="green.500" />
-              5TB Lorem, ipsum dolor.
+              Social Media Marketing
+            </ListItem>
+            <ListItem>
+              <ListIcon as={FaCheckCircle} color="green.500" />
+              Copywriting and Content Marketing
             </ListItem>
           </List>
           <Box w="80%" pt={7}>
             <Button w="full" colorScheme="red" variant="outline">
-              Start trial
+              Select
             </Button>
           </Box>
         </VStack>

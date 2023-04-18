@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  useDisclosure,
   Image,
   SimpleGrid,
   Stack,
@@ -22,7 +21,7 @@ import {
   Textarea,
 } from "@chakra-ui/react";
 import Navbar from '../components/Navbar'
-
+import emailjs from 'emailjs-com';
 import {  PhoneIcon } from "@chakra-ui/icons";
 import Footer from "../components/Footer";
 import styles from "../styles/Home.module.css";
@@ -32,7 +31,44 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 function index() {
- 
+ const [details, setdetails] = useState({})
+ const toast = useToast();
+
+  const handlechange=(e)=>{
+ const {name,value}=e.target;
+ setdetails({
+  ...details,
+  [name]:value,
+ })
+}
+
+const handlesubmit=()=>{
+  if (!details.name ||!details.email ||!details.telephone ||!details.message) {
+    toast({
+      title: "All fields are mandatory",
+      description: "Please fill all the details",
+      status: "error",
+      duration: 4000,
+      isClosable: true,
+    });
+  } else {
+    toast({
+      title: `Thankyou For contacting us ${details.name} `,
+      description: "We will get back to you soon.",
+      status: "success",
+      duration: 4000,
+      isClosable: true,
+    });
+    setdetails("")
+    emailjs.send('service_4xaun0y', 'template_327lv4h',  details,'j654_TwoZCwNnje04')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+  }
+}
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -454,6 +490,7 @@ function index() {
         color={"#0e2b5c"}
         fontFamily={"Montserrat"}
         mt={"30px"}
+        id="contact"
       >
         Let us collaborate and accelarate
       </Heading>
@@ -465,14 +502,20 @@ function index() {
       >
         <Flex p={8} flex={1} align={"center"} justify={"center"} mt={"-20px"}>
           <Stack spacing={4} w={"full"} maxW={"md"}>
-            <Heading fontSize={"2xl"}>Get in Touch</Heading>
+            <Heading fontSize={"2xl"} >Get in Touch</Heading>
             <FormControl id="email">
               <FormLabel>Name</FormLabel>
-              <Input type="text" placeholder="your name" />
+              <Input type="text" placeholder="your name" 
+onChange={handlechange}
+                name="name"
+              />
             </FormControl>
             <FormControl id="password">
               <FormLabel>Email Address</FormLabel>
-              <Input type="email" placeholder="youremail@gmail.com" />
+              <Input type="email" placeholder="youremail@gmail.com"
+              name="email"
+              onChange={handlechange}
+               />
             </FormControl>
             <FormControl id="phone">
               <FormLabel>Phone</FormLabel>
@@ -481,10 +524,13 @@ function index() {
                   pointerEvents="none"
                   children={<PhoneIcon color="gray.300" />}
                 />
-                <Input type="tel" placeholder="Phone number" />
+                <Input type="tel" placeholder="Phone number"
+                name="telephone"
+                onChange={handlechange}
+                 />
               </InputGroup>
             </FormControl>
-            <FormControl id="password">
+            <FormControl id="message">
               <FormLabel>
                 Message <span>(optional)</span>{" "}
               </FormLabel>
@@ -494,6 +540,8 @@ function index() {
                   borderRadius: "gray.300",
                 }}
                 placeholder="Message"
+                name="message"
+                onChange={handlechange}
               />
             </FormControl>
             <Stack spacing={6}>
@@ -502,7 +550,9 @@ function index() {
                 align={"start"}
                 justify={"space-between"}
               ></Stack>
-              <Button colorScheme={"blue"} variant={"solid"}>
+              <Button colorScheme={"blue"} variant={"solid"}
+              onClick={handlesubmit}
+              >
                 Submit
               </Button>
             </Stack>

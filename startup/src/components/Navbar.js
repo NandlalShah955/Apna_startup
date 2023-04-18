@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {Flex,Box,useDisclosure} from "@chakra-ui/react"
-import Link from 'next/link';
+
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
@@ -103,9 +103,21 @@ function Navbar() {
           </Box>
 
           <Box mt={{ base: 4, md: 0 }} mr={{ base: 0, md: 6 }}>
+           
+          <ScrollLink
+            to="contact"
+            smooth={true}
+            duration={500}
+            offset={-70}
+          >
+           
             Contact Us
+            
+            
+            
+          </ScrollLink>
           </Box>
-          {/* </Link> */}
+        
         </Flex>
       </Flex>
 
