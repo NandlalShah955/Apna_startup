@@ -3,7 +3,7 @@ import {
     Box,
     chakra,
     Container,
-    Link,
+    
     Stack,
     Text,
     useColorModeValue,
@@ -38,7 +38,6 @@ import {
     label,
     href,
   }) => {
-    const Phonenum="8448674560"
     return (
       <chakra.button
         bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
@@ -61,14 +60,16 @@ import {
     );
   };
 
+  
 
 
 
 
-
-
-function Footer() {
-  return (
+  
+  function Footer() {
+    const Phonenum="8448674560"
+    const message = encodeURIComponent('Hello, I want to use your services');
+    return (
     <Box
     bg={useColorModeValue('gray.50', 'gray.900')}
     color={useColorModeValue('gray.700', 'gray.200')}>
@@ -117,7 +118,7 @@ function Footer() {
     </Box>
   
   <Stack position={'fixed'} bottom={'60px'} right={'50px'} zIndex={'999'} bg={"#25D366"}>
-<Link href={`https://wa.me/${Phonenum}`}>
+<Link href={`https://wa.me/${Phonenum}?text=${message}`}>
 
   <BsWhatsapp color={"white"}  fontSize={"70px"} className={style.hover}/>
 </Link>
