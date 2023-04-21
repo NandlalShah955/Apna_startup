@@ -99,7 +99,7 @@ import {
           <TestimonialContent>
             <TestimonialHeading>Efficient Collaborating</TestimonialHeading>
             <TestimonialText>
-            It has been a pleasure working with Fleapo for both my websites. It was very well executed and they are very particular about their design quotient and also delivered my project on time.
+            It has been a pleasure working with MustWeb for my foundation website. It was very well executed and they are very particular about their design quotient and also delivered my project on time.
           
            
             </TestimonialText>
@@ -116,7 +116,7 @@ import {
           <TestimonialContent>
             <TestimonialHeading>Intuitive Design</TestimonialHeading>
             <TestimonialText>
-            Thanks to Fleapo's vibrant team, we got a platform to showcase our services completely through online marketing.
+            Thanks to MustWeb's vibrant team, we got a Huge growth in our business due to best Digital Marketing Services by their team
             </TestimonialText>
           </TestimonialContent>
           <TestimonialAvatar
@@ -131,7 +131,7 @@ import {
           <TestimonialContent>
             <TestimonialHeading>Mindblowing Service</TestimonialHeading>
             <TestimonialText>
-            I had a wonderful experience working with Mr. Nandlal, his interaction was more on a personal level than a strict professional one. Even after the app was delivered to us, they were happy to incorporate a few last minute changes.
+            I had a wonderful experience working with Mr. Nandlal, his interaction was more on a personal level than a strict professional one. Even after the my business website was delivered to us, they were happy to incorporate a few last minute changes.
             </TestimonialText>
           </TestimonialContent>
           <TestimonialAvatar

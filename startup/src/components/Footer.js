@@ -9,7 +9,11 @@ import {
     useColorModeValue,
     VisuallyHidden,
   } from '@chakra-ui/react';
-  import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+  import { FaInstagramSquare,FaWhatsappSquare } from 'react-icons/fa';
+  import { BsWhatsapp } from 'react-icons/bs';
+  import Link from 'next/link';
+
+  import style from "../styles/Home.module.css"
 
   const Logo = (props) => {
     return (
@@ -34,6 +38,7 @@ import {
     label,
     href,
   }) => {
+    const Phonenum="8448674560"
     return (
       <chakra.button
         bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
@@ -95,20 +100,28 @@ function Footer() {
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
-        <Text>© 2022 Chakra Templates. All rights reserved</Text>
+        <Text color={"black"}>© 2022 MustWeb All rights reserved</Text>
         <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'Twitter'} href={'#'}>
-            <FaTwitter />
+         
+          <SocialButton label={'Instagram'} href={'#'} >
+            <FaInstagramSquare color={"#833AB4"} fontSize={"60px"}/>
           </SocialButton>
-          <SocialButton label={'YouTube'} href={'#'}>
-            <FaYoutube />
+          <SocialButton label={'Whatsapp'} href={'#'} >
+            <FaWhatsappSquare color={"green"} fontSize={"60px"}/>
           </SocialButton>
-          <SocialButton label={'Instagram'} href={'#'}>
-            <FaInstagram />
-          </SocialButton>
+        
+          
+        
         </Stack>
       </Container>
     </Box>
+  
+  <Stack position={'fixed'} bottom={'60px'} right={'50px'} zIndex={'999'} bg={"#25D366"}>
+<Link href={`https://wa.me/${Phonenum}`}>
+
+  <BsWhatsapp color={"white"}  fontSize={"70px"} className={style.hover}/>
+</Link>
+  </Stack>
   </Box>
   )
 }

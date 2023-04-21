@@ -21,11 +21,16 @@ function Navbar() {
         justify="space-between"
         wrap="wrap"
         w="100%"
+        h={"80px"}
         p={6}
         bg="#213059"
         color="white"
         fontFamily={"Montserrat"}
-        position={"fixed"}
+        position={"sticky"}
+        overflow={"hidden"}
+      zIndex={"999"}
+      top={'0'}
+      cursor={"pointer"}
       >
         <Flex align="center">
           {/* <Link to="/"> */}

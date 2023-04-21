@@ -29,6 +29,17 @@
   font-size: 30px;
   color: #0e2b5c;
 }
+.hover:hover{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
 
-
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(-2px, 0); }
+  40% { transform: translate(0, 0); }
+  60% { transform: translate(2px, 0); }
+  80% { transform: translate(0, 0); }
+  100% { transform: translate(-2px, 0); }
+}
 
