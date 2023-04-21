@@ -26,6 +26,7 @@ import {  PhoneIcon } from "@chakra-ui/icons";
 import Footer from "../components/Footer";
 import styles from "../styles/Home.module.css";
 import Plans from "../components/Plans";
+import Statistics from "../components/Statistics";
 import Testimonial from "../components/Testimonial";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -486,6 +487,9 @@ const handlesubmit=()=>{
       </Stack>
 
       <Testimonial />
+
+<Statistics/>
+
 
       <Heading
         noOfLines={1}
