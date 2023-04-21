@@ -86,7 +86,7 @@ import {
 
   function Testimonial() {
   return (
-    <Box  margin={'auto'} width={'90%'} bg={useColorModeValue("red.100", "red.900")} >
+    <Box  margin={'auto'} width={'90%'} bg={useColorModeValue("red.100", "red.900")}   fontFamily={"Montserrat"} >
     <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
       <Stack spacing={0} align={'center'}>
         <Heading color={"#0e2b5c"} fontFamily={"Montserrat"}>Happy Clients equals to happy us</Heading>

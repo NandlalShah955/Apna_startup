@@ -22,13 +22,15 @@ function Navbar() {
         wrap="wrap"
         w="100%"
         p={6}
-        bg="teal.500"
+        bg="#213059"
         color="white"
+        fontFamily={"Montserrat"}
+        position={"fixed"}
       >
         <Flex align="center">
           {/* <Link to="/"> */}
-          <Box fontWeight="bold" fontSize="xl" letterSpacing="wide" >
-            My Website
+          <Box fontWeight="bold" fontSize="30px" letterSpacing="wide" >
+            MustWeb
           </Box>
           {/* </Link> */}
         </Flex>
@@ -48,9 +50,10 @@ function Navbar() {
           pt={{ base: 4, md: 0 }}
           display={{ base: isOpen ? "flex" : "none", md: "flex" }}
           width={{ base: "full", md: "auto" }}
+          fontSize={"20px"}
         >
      
-          <Box mt={{ base: 4, md: 0 }} mr={{ base: 0, md: 6 }}>
+          <Box mt={{ base: 4, md: 0 }} mr={{ base: 0, md: 6 }} >
           <ScrollLink
             to="about"
             smooth={true}

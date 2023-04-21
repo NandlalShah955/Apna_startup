@@ -6,7 +6,6 @@ import {
   VStack,
   Center,
   useColorModeValue,
-  useBreakpointValue,
   Button,
   useToast,
   Flex,
@@ -19,6 +18,7 @@ import {
   InputGroup,
   InputLeftElement,
   Textarea,
+  useBreakpointValue
 } from "@chakra-ui/react";
 import Navbar from '../components/Navbar'
 import emailjs from 'emailjs-com';
@@ -88,6 +88,9 @@ const handlesubmit=()=>{
       items: 1,
     },
   };
+  const imageUrl = 'https://chakra-templates.dev/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1515378791036-0648a3ef77b2%3Fixid%3DMXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%253D%26ixlib%3Drb-1.2.1%26auto%3Dformat%26fit%3Dcrop%26w%3D1350%26q%3D80&w=1200&q=75';
+
+  const showImage = useBreakpointValue({ base: false, md: true, lg: true });
 
   return (
     <>
@@ -558,14 +561,8 @@ onChange={handlechange}
             </Stack>
           </Stack>
         </Flex>
-        <Flex flex={1}>
-          <Image
-            alt={"Login Image"}
-            boxSize={"90%"}
-            src={
-              "https://chakra-templates.dev/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1515378791036-0648a3ef77b2%3Fixid%3DMXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%253D%26ixlib%3Drb-1.2.1%26auto%3Dformat%26fit%3Dcrop%26w%3D1350%26q%3D80&w=1200&q=75"
-            }
-          />
+        <Flex flex={1}  >
+          {showImage && <Image src={imageUrl} alt="Your image"  boxSize={"90%"} />}
         </Flex>
       </Stack>
 
