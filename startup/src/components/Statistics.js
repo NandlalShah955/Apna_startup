@@ -47,23 +47,8 @@ import {
 
 function Statistics() {
  const [counter, setcounter] = useState(false);
- 
-// useEffect(() => {
-//  const intervalId=setInterval(() => {
-//     if(users<200){
-//         setusers(prevTime=>prevTime+1);
-//     }
-//  },1);
-//  return () => clearInterval(intervalId);
-// }, [users])
-
-
-
-
-
-
- 
-    return (
+  
+   return (
     <Box maxW="7xl" mx={'auto'} pt={5} px={{ base: 2, sm: 12, md: 17 }}>
       <chakra.h1
         textAlign={'center'}
@@ -78,19 +63,20 @@ function Statistics() {
 
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}    fontFamily={"Montserrat"}>
         <StatsCard
-          title={'Users'}
+          title={'Customers'}
           stat={counter && <CountUp start={0} end={100} duration={5} delay={0}/>}
           icon={<BsPerson size={'3em'} />}
         />
+        
         <StatsCard
-          title={'Servers'}
-          stat={counter && <CountUp start={0} end={100} duration={5} 
+          title={'Projects'}
+          stat={counter && <CountUp start={0} end={10} duration={5} 
           delay={0}/>}
           icon={<FiServer size={'3em'} />}
         />
         <StatsCard
-          title={'Datacenters'}
-          stat={counter && <CountUp start={0} end={100} duration={5} 
+          title={'Lead Generated'}
+          stat={counter && <CountUp start={0} end={10000} duration={5} 
           delay={0}/>}
           icon={<GoLocation size={'3em'} />}
         />

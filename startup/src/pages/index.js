@@ -30,12 +30,16 @@ import Statistics from "../components/Statistics";
 import Testimonial from "../components/Testimonial";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Typewriter from "typewriter-effect";
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+
 
 function index() {
  const [details, setdetails] = useState({})
  const toast = useToast();
 
-  const handlechange=(e)=>{
+  
+ const handlechange=(e)=>{
  const {name,value}=e.target;
  setdetails({
   ...details,
@@ -93,6 +97,9 @@ const handlesubmit=()=>{
 
   const showImage = useBreakpointValue({ base: false, md: true, lg: true });
 
+  
+
+
   return (
     <>
      
@@ -103,7 +110,7 @@ const handlesubmit=()=>{
         w={"full"}
         h={"100vh"}
         backgroundImage={
-          "url(https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80)"
+          "url(https://user-images.githubusercontent.com/101573792/235410693-3855e274-9cf7-4f55-83db-280b6f52eb43.jpg)"
         }
         backgroundSize={"cover"}
         backgroundPosition={"center center"}
@@ -114,16 +121,38 @@ const handlesubmit=()=>{
           px={useBreakpointValue({ base: 4, md: 8 })}
           bgGradient={"linear(to-r, blackAlpha.600, transparent)"}
         >
-          <Stack maxW={"2xl"} align={"flex-start"} spacing={6}>
-            <Text
-              color={"white"}
+          <Stack maxW={"2xl"} align={"center"} spacing={6} color={"white"}
               fontWeight={700}
-              lineHeight={1.2}
-              fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
-            >
-              Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-              eiusmod tempor
-            </Text>
+              lineHeight={1}
+              fontSize={useBreakpointValue({ base: "50px", md: "4xl",lg:"70px"})}>
+           <Typewriter
+            options={{
+        
+         
+          loop: true,
+        }}
+            onInit={(typewriter)=>{
+              typewriter
+              .typeString("Best Digital Marketing & Web Development Agency")
+              .pauseFor(2000)
+              .deleteAll()
+              .typeString("Creative and Innovative Digital Solution")
+              .pauseFor(2000)
+              .deleteAll()
+              .typeString("Let us handle marketing and development, while you grow your business.")
+              .pauseFor(2000)
+              .deleteAll()
+              .start()
+              
+             
+            }}  
+
+
+           />
+           
+           
+           
+           
             <Stack direction={"row"}>
               <Button
                 bg={"blue.400"}
@@ -131,16 +160,28 @@ const handlesubmit=()=>{
                 color={"white"}
                 _hover={{ bg: "blue.500" }}
               >
-                Show me more
+                Get Quote
               </Button>
-              <Button
+             
+            <Button
                 bg={"whiteAlpha.300"}
                 rounded={"full"}
                 color={"white"}
                 _hover={{ bg: "whiteAlpha.500" }}
               >
-                Show me more
+               <ScrollLink
+            to="contact"
+            smooth={true}
+            duration={500}
+            offset={-70}
+          >
+
+              Contact Us
+          </ScrollLink>
+        
               </Button>
+        
+              
             </Stack>
           </Stack>
         </VStack>

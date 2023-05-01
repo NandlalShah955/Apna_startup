@@ -200,11 +200,11 @@ function Plans() {
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  Web Hoisting
+                  Web Hoisting according to your choice
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  Domain According to your choice
+                  Domain According to Market Charges
                 </ListItem>
               </List>
               <Box w="80%" pt={7}>
