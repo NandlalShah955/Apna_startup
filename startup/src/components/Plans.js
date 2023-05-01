@@ -46,7 +46,7 @@ function Plans() {
   return (
     <Box py={12}>
       <VStack spacing={2} textAlign="center">
-        <Heading as="h1" fontSize="4xl" id="pricing"   fontFamily={"Montserrat"} color={"#0E2B5C"}>
+        <Heading as="h1" fontSize={{ base: "4xl", md: "5xl" }} id="pricing"   fontFamily={"Montserrat"} color={"#0E2B5C"}>
           Our Plans that fit your need
         </Heading>
       </VStack>

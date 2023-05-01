@@ -32,7 +32,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Typewriter from "typewriter-effect";
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
-
+import Pricemodal from "../components/Pricemodal"
 
 function index() {
  const [details, setdetails] = useState({})
@@ -195,6 +195,7 @@ const handlesubmit=()=>{
         mb={"-30px"}
         color={"#0e2b5c"}
         fontFamily={"Montserrat"}
+        fontSize={{ base: "4xl", md: "5xl" }}
       >
         Services Offered by us
       </Heading>
@@ -465,11 +466,15 @@ const handlesubmit=()=>{
 
       <Plans />
 
+      <Pricemodal/>
+
       <Heading
         noOfLines={1}
         textAlign="center"
         color={"#0e2b5c"}
         fontFamily={"Montserrat"}
+        fontSize={{ base: "4xl", md: "5xl" }}
+        mt={"20px"}
         id="projects"
       >
         Brilliance is what our projects deliver
@@ -535,10 +540,12 @@ const handlesubmit=()=>{
       <Heading
         noOfLines={1}
         textAlign="center"
-        color={"#0e2b5c"}
-        fontFamily={"Montserrat"}
         mt={"30px"}
         id="contact"
+        color={"#0e2b5c"}
+        fontFamily={"Montserrat"}
+        fontSize={{ base: "4xl", md: "5xl" }}
+      
       >
         Let us collaborate and accelarate
       </Heading>

@@ -52,10 +52,11 @@ function Statistics() {
     <Box maxW="7xl" mx={'auto'} pt={5} px={{ base: 2, sm: 12, md: 17 }}>
       <chakra.h1
         textAlign={'center'}
-        fontSize={'4xl'}
         py={10}
         fontWeight={'bold'}
         fontFamily={"Montserrat"}
+        color={"#0e2b5c"}
+         fontSize={{ base: "4xl", md: "5xl" }}
         >
         What is our company doing?
       </chakra.h1>
