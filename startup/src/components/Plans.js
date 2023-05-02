@@ -23,7 +23,7 @@ import {
 } from "@chakra-ui/react";
 import { FaCheckCircle } from "react-icons/fa";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
-import {BsWhatsapp} from "react-icons/bs";
+
 
 function PriceWrapper({ children }) {
   return (
@@ -116,7 +116,7 @@ function Plans() {
                   <PopoverArrow />
                   <PopoverCloseButton />
                   <PopoverBody>
-                    Contact us :<BsWhatsapp></BsWhatsapp>
+                    Contact us ::8448674560
                     <br />
                     Or you can fill the form below
                   </PopoverBody>

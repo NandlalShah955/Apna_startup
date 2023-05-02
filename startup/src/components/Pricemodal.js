@@ -24,7 +24,7 @@ function Pricemodal() {
     return (
         <Box textAlign="center" >
        <PriceHeader/>
-        <Button onClick={onOpen}>See how our plans compare</Button>
+        <Button onClick={onOpen} fontFamily={"Montserrat"}>See how our plans compare</Button>
 
         <Modal isOpen={isOpen} onClose={onClose} >
             <ModalOverlay />
@@ -45,7 +45,7 @@ function Pricemodal() {
                             </Thead>
                             <Tbody>
                                 <Tr>
-                                    <Td>Offline Invoicing</Td>
+                                    <Td>Homepage</Td>
                                     <Td>✔️</Td>
                                     <Td>✔️</Td>
                                     <Td>✔️</Td>
@@ -53,139 +53,127 @@ function Pricemodal() {
                                 </Tr>
 
                                 <Tr>
-                                    <Td>Calendar Billing</Td>
+                                    <Td>Customer Support</Td>
                                     <Td>✔️</Td>
                                     <Td>✔️</Td>
                                     <Td>✔️</Td>
                                     <Td>✔️</Td>
                                 </Tr>
                                 <Tr>
-                                    <Td>Usage-based (Metered) Billing</Td>
+                                    <Td>Responsiveness</Td>
                                     <Td>✔️</Td>
                                     <Td>✔️</Td>
                                     <Td>✔️</Td>
                                     <Td>✔️</Td>
                                 </Tr>
                                 <Tr>
-                                    <Td>Advance Invoices</Td>
+                                    <Td>Payment Integration</Td>
                                     <Td fontWeight="bold" color="red">X</Td>
                                     <Td fontWeight="bold" color="red">X</Td>
                                     <Td>✔️</Td>
                                     <Td>✔️</Td>
                                 </Tr>
                                 <Tr>
-                                    <Td>Admin console for subscription management</Td>
-                                    <Td>✔️</Td>
-                                    <Td>✔️</Td>
-                                    <Td>✔️</Td>
-                                    <Td>✔️</Td>
-                                </Tr>
-                                <Tr>
-                                    <Td>Customer portal</Td>
-                                    <Td>✔️</Td>
-                                    <Td>✔️</Td>
-                                    <Td>✔️</Td>
-                                    <Td>✔️</Td>
-                                </Tr>
-                                <Tr>
-                                    <Td>Credit Notes</Td>
-                                    <Td>✔️</Td>
-                                    <Td>✔️</Td>
-                                    <Td>✔️</Td>
-                                    <Td>✔️</Td>
-                                </Tr>
-                                <Tr>
-                                    <Td>Coupons and Discounts</Td>
-                                    <Td>✔️</Td>
-                                    <Td>✔️</Td>
-                                    <Td>✔️</Td>
-                                    <Td>✔️</Td>
-                                </Tr>
-                                <Tr>
-                                    <Td>Gift Subscriptions</Td>
+                                    <Td>User Login/Signup</Td>
                                     <Td fontWeight="bold" color="red">X</Td>
                                     <Td fontWeight="bold" color="red">X</Td>
                                     <Td>✔️</Td>
                                     <Td>✔️</Td>
                                 </Tr>
                                 <Tr>
-                                    <Td>Consolidated Invoicing</Td>
+                                    <Td>Dynamic CSS</Td>
                                     <Td fontWeight="bold" color="red">X</Td>
                                     <Td>✔️</Td>
                                     <Td>✔️</Td>
                                     <Td>✔️</Td>
                                 </Tr>
                                 <Tr>
-                                    <Td>Net-D Payment Terms</Td>
+                                    <Td>Contact Form & Email</Td>
                                     <Td fontWeight="bold" color="red">X</Td>
                                     <Td>✔️</Td>
                                     <Td>✔️</Td>
                                     <Td>✔️</Td>
                                 </Tr>
                                 <Tr>
-                                    <Td>Quotes</Td>
+                                    <Td>Authenticated User Login</Td>
                                     <Td fontWeight="bold" color="red">X</Td>
                                     <Td fontWeight="bold" color="red">X</Td>
                                     <Td fontWeight="bold" color="red">X</Td>
+                                    <Td>✔️</Td>
+                                </Tr>
+                                <Tr>
+                                    <Td>User Login With their Gmail</Td>
+                                    <Td fontWeight="bold" color="red">X</Td>
+                                    <Td fontWeight="bold" color="red">X</Td>
+                                    <Td fontWeight="bold" color="red">X</Td>
+                                    <Td>✔️</Td>
+                                </Tr>
+                                <Tr>
+                                    <Td>SEO Optimization</Td>
+                                    <Td fontWeight="bold" color="red">X</Td>
+                                    <Td fontWeight="bold" color="red">X</Td>
+                                    <Td>✔️</Td>
+                                    <Td>✔️</Td>
+                                </Tr>
+                                <Tr>
+                                    <Td>Admin Panel</Td>
+                                    <Td fontWeight="bold" color="red">X</Td>
+                                    <Td fontWeight="bold" color="red">X</Td>
+                                    <Td fontWeight="bold" color="red">X</Td>
+                                    <Td>✔️</Td>
+                                   
+                                </Tr>
+                                <Tr>
+                                    <Td>User Info Page</Td>
+                                    <Td fontWeight="bold" color="red">X</Td>
+                                    <Td fontWeight="bold" color="red">X</Td>
+                                    <Td>✔️</Td>
+                                    <Td>✔️</Td>
+                                </Tr>
+                                <Tr>
+                                    <Td>Database Availability</Td>
+                                    <Td fontWeight="bold" color="red">X</Td>
+                                    <Td fontWeight="bold" color="red">X</Td>
+                                    <Td>✔️</Td>
                                     <Td>✔️</Td>
                                     
                                 </Tr>
                                 <Tr>
-                                    <Td>Account Hierarchy</Td>
+                                    <Td>24*7 Customer Support</Td>
                                     <Td fontWeight="bold" color="red">X</Td>
                                     <Td fontWeight="bold" color="red">X</Td>
-                                    <Td fontWeight="bold" color="red">X</Td>
-                                    <Td>✔️</Td>
-                                </Tr>
-                                <Tr>
-                                    <Td>Pricing Models</Td>
-                                    <Td>✔️</Td>
-                                    <Td>✔️</Td>
                                     <Td>✔️</Td>
                                     <Td>✔️</Td>
                                 </Tr>
                                 <Tr>
-                                    <Td>Contract terms</Td>
-                                    <Td fontWeight="bold" color="red">X</Td>
+                                    <Td>API Integration</Td>
                                     <Td fontWeight="bold" color="red">X</Td>
                                     <Td fontWeight="bold" color="red">X</Td>
                                     <Td>✔️</Td>
+                                    <Td>✔️</Td>
                                 </Tr>
                                 <Tr>
-                                    <Td>Multi Decimal Support</Td>
+                                    <Td>Domain & Hoisting Support</Td>
                                     <Td>✔️</Td>
                                     <Td>✔️</Td>
                                     <Td>✔️</Td>
                                     <Td>✔️</Td>
                                 </Tr>
                                 <Tr>
-                                    <Td>On-demand Discounting</Td>
+                                    <Td>Dynamic Pages</Td>
                                     <Td fontWeight="bold" color="red">X</Td>
-                                    <Td fontWeight="bold" color="red">X</Td>
-                                    <Td fontWeight="bold" color="red">X</Td>
-                                    <Td>✔️</Td>
-                                </Tr>
-                                <Tr>
-                                    <Td>Backdated Invoicing</Td>
-                                    <Td>✔️</Td>
                                     <Td>✔️</Td>
                                     <Td>✔️</Td>
                                     <Td>✔️</Td>
                                 </Tr>
                                 <Tr>
-                                    <Td>eInvoicing</Td>
-                                    <Td>✔️</Td>
-                                    <Td>✔️</Td>
-                                    <Td>✔️</Td>
-                                    <Td>✔️</Td>
-                                </Tr>
-                                <Tr>
-                                    <Td>In-App Purchase Management</Td>
-                                    <Td>✔️</Td>
-                                    <Td>✔️</Td>
+                                    <Td>Backend Part Integration</Td>
+                                    <Td fontWeight="bold" color="red">X</Td>
+                                    <Td fontWeight="bold" color="red">X</Td>
                                     <Td>✔️</Td>
                                     <Td>✔️</Td>
                                 </Tr>
+                                
                             </Tbody>
                         </Table>
                     </TableContainer>

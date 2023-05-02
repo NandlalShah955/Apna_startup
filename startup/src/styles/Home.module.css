@@ -11,6 +11,10 @@
 .coorosel>img{
   height: 55%;
 }
+.coorosel>img:hover{
+  transform: scale(1.1);
+  transition: all 0.7s ease;
+}
 .coorosel>p{
   font-family: 'montserrat',sans-serif;
   font-weight: 500;
