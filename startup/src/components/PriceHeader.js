@@ -211,7 +211,7 @@ function PriceHeader() {
               {price.symbol}
             </Text>
             <Text m="10px 0px" fontSize="2xl" fontWeight="bold">
-              {price.m1a}
+              {price.m1a}/- only
             </Text>
 
             <Button p="20px" bg="#6D00C1" colorScheme="#b766ff" color="white">
@@ -253,7 +253,7 @@ function PriceHeader() {
               {price.symbol}
             </Text>
             <Text m="10px 0px" fontSize="2xl" fontWeight="bold">
-              {price.m2a}
+              {price.m2a}/- only
             </Text>
 
             <Button p="20px" bg="#6D00C1" colorScheme="#b766ff" color="white">
@@ -294,7 +294,7 @@ function PriceHeader() {
               {price.symbol}
             </Text>
             <Text m="10px 0px" fontSize="2xl" fontWeight="bold">
-              {price.m3a}
+              {price.m3a}/- only
             </Text>
 
             <Button p="20px" bg="#6D00C1" colorScheme="#b766ff" color="white">
@@ -339,7 +339,7 @@ function PriceHeader() {
               {price.symbol}
             </Text>
             <Text m="10px 0px" fontSize="2xl" fontWeight="bold">
-              {price.m4a}
+              {price.m4a}/- only
             </Text>
             <Button p="20px" bg="#6D00C1" colorScheme="#b766ff" color="white">
               Schedule a demo{" "}

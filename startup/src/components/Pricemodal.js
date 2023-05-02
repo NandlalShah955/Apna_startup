@@ -37,8 +37,8 @@ function Pricemodal() {
                             <Thead>
                                 <Tr >
                                     <Th fontSize="md">Features</Th>
-                                    <Th fontSize="md">Launch</Th>
-                                    <Th fontSize="md">Rise</Th>
+                                    <Th fontSize="md">Individual</Th>
+                                    <Th fontSize="md">Startup</Th>
                                     <Th fontSize="md">Scale</Th>
                                     <Th fontSize="md">Enterprise</Th>
                                 </Tr>
