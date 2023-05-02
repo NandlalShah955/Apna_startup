@@ -22,20 +22,20 @@ import PriceHeader from './PriceHeader';
 function Pricemodal() {
     const { isOpen, onOpen, onClose } = useDisclosure();
     return (
-        <Box textAlign="center">
+        <Box textAlign="center" >
        <PriceHeader/>
         <Button onClick={onOpen}>See how our plans compare</Button>
 
-        <Modal isOpen={isOpen} onClose={onClose}>
+        <Modal isOpen={isOpen} onClose={onClose} >
             <ModalOverlay />
             <ModalContent maxW="80%">
-                <ModalHeader fontSize={{ base: "md", md: "2xl" }}>Invoicing and Subscription Management</ModalHeader>
+                <ModalHeader fontSize={{ base: "md", md: "2xl" }}  fontFamily={"Montserrat"}>Invoicing and Subscription Management</ModalHeader>
                 <ModalCloseButton />
-                <ModalBody>
-                    <TableContainer>
+                <ModalBody  fontFamily={"Montserrat"}>
+                    <TableContainer >
                         <Table variant='simple'>
                             <Thead>
-                                <Tr>
+                                <Tr >
                                     <Th fontSize="md">Features</Th>
                                     <Th fontSize="md">Launch</Th>
                                     <Th fontSize="md">Rise</Th>
@@ -128,6 +128,7 @@ function Pricemodal() {
                                     <Td fontWeight="bold" color="red">X</Td>
                                     <Td fontWeight="bold" color="red">X</Td>
                                     <Td>✔️</Td>
+                                    
                                 </Tr>
                                 <Tr>
                                     <Td>Account Hierarchy</Td>
